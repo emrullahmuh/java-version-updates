@@ -13,6 +13,16 @@ public class main {
         items.add(4);
       //  items.add("apple");
         printdoubled(items);
+        System.out.println("8888888888888888888888888");
+   footballplayer joe=new footballplayer("joe");
+   baseballplayer pat=new baseballplayer("pat");
+   soccerplayer dembele=new soccerplayer("dembele");
+    team <soccerplayer>intel=new team("intel");
+        team<baseballplayer> marano=new team("marano");
+    team<footballplayer>bull=new team<>("bull");
+
+    intel.addplayer(dembele);
+
     }
 
     private static void printdoubled(ArrayList<Integer> items) {
@@ -20,5 +30,12 @@ public class main {
         for (Integer each: items){
             System.out.println( each*2);
         }
+
+
+
+
+
+
+
     }
 }
