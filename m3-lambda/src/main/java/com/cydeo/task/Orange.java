@@ -1,16 +1,21 @@
 package com.cydeo.task;
 
 import com.cydeo.Color;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
-@AllArgsConstructor
-@Getter
-@Setter
-@ToString
 public class Orange {
     private int weight;
     private Color color;
+
+    public Orange(int weight, Color color) {
+        this.weight = weight;
+        this.color = color;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public Color getColor() {
+        return color;
+    }
 }
