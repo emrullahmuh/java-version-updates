@@ -48,7 +48,6 @@ public class main {
 
                 .forEach(System.out::println);
 
-
     }
     }
 

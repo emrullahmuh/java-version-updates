@@ -29,7 +29,7 @@ list.forEach( System.out::println);
         System.out.println("limit");
         list.stream()
                 .filter(i->i%2==0)
-                .limit(3)
+                .limit(1)
                 .forEach(System.out::println);
         //skip
         System.out.println("skip");

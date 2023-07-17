@@ -6,7 +6,7 @@ public class Dish {
     private String name;
     private boolean vegaterian;
 
-    private int calories;
+    private Integer calories;
     private Types types;
 
     public Dish(String name, boolean vegaterian, int calories, Types type) {
