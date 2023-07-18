@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -12,7 +13,7 @@ list.forEach( System.out::println);
 
 //filter
         System.out.println("filter");
-        list.stream()
+       list.stream()
                 .filter(i->i%2==0)
                 .forEach(System.out::println);
 
@@ -29,12 +30,14 @@ list.forEach( System.out::println);
         System.out.println("limit");
         list.stream()
                 .filter(i->i%2==0)
-                .limit(1)
+                .limit(2)
+                .skip(1)
                 .forEach(System.out::println);
         //skip
         System.out.println("skip");
         list.stream()
                 .filter(i->i%2==0)
+
                 .skip(1)
                 .forEach(System.out::println);
 
@@ -49,5 +52,6 @@ list.forEach( System.out::println);
         words.stream().forEach(p-> System.out.println(p +" ="+p.length()));
 
 
-    }
-}
+    }}
+
+
